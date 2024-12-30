@@ -23,9 +23,9 @@ const Navbar = () => {
   const handleClickModal =()=>{
     setNavbarModal(prev=>!prev);
   }
-  /*const sideNavbarFunc=()=>{
+  const sideNavbarFunc=()=>{
     setSideNavbarFunc(!sideNavbar)
-  }
+  }/*
   const handleprofile =()=>{
     let userId = localStorage.getItem("userId")
     navigate(`/user/${userId}`);
@@ -71,7 +71,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
     <div className="navbar-left">
-       <div className="navbarHamberger">
+       <div className="navbarHamberger"onClick={sideNavbarFunc}>
           <MenuIcon sx={{color:'white'}}/>
        </div>
        
