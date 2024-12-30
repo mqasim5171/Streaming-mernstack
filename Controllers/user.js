@@ -31,7 +31,11 @@ exports.signIn = async (req,res)=>{
         const user = await User.findOne({ userName });
         
         if(user && await bcrypt.compare(password,user.password) ){
-
+            
+            const token = jwt.sign({userId:user._id},'its_my_secret_key');
+            res.cookie('token',token);
+            console.log(token);
+ 
             res.json({message:"Logged in successfully", success:"true"});
         }
         else
