@@ -153,13 +153,65 @@ const Video = () => {
             </div> 
           </div>
         </div>
+          
+        <div className="youtubeOthersComments">
+
+          <div className="youtubeSelfComment">
+          <img className="video_youtubeSelfCommentProfile" src="https://yt3.googleusercontent.com/C_ICf6omfzyhzLwAttGJKmKLYXKr2vamNBN0rEueUBqDW18sFqac2dIRnkeGKZ-613ZH9-XQ=s160-c-k-c0x00ffffff-no-rj "/>
+          <div className="others_CommentSection">
+            <div className="others_CommentSectionHeader">
+            
+            
+
+              <div className="channelName_comment">Qasim</div>
+              <div className="commentTimingOthers">2024-12-30</div>
+          </div>
+          <div className="otherCommentSectionComment">
+          this is super cool and difficult web project
+          </div>
+
+          </div>
+        </div>
+   
+        <div className="youtubeSelfComment">
+          <img className="video_youtubeSelfCommentProfile" src="https://yt3.googleusercontent.com/C_ICf6omfzyhzLwAttGJKmKLYXKr2vamNBN0rEueUBqDW18sFqac2dIRnkeGKZ-613ZH9-XQ=s160-c-k-c0x00ffffff-no-rj "/>
+          <div className="others_CommentSection">
+            <div className="others_CommentSectionHeader">
+            
+            
+
+              <div className="channelName_comment">Eshem</div>
+              <div className="commentTimingOthers">29-12-2024</div>
+          </div>
+          <div className="otherCommentSectionComment">
+          best vedio
+          </div>
+
+          </div>
+        </div>
+
+        <div className="youtubeSelfComment">
+          <img className="video_youtubeSelfCommentProfile" src="https://yt3.googleusercontent.com/C_ICf6omfzyhzLwAttGJKmKLYXKr2vamNBN0rEueUBqDW18sFqac2dIRnkeGKZ-613ZH9-XQ=s160-c-k-c0x00ffffff-no-rj "/>
+          <div className="others_CommentSection">
+            <div className="others_CommentSectionHeader">
+            
+            
+
+              <div className="channelName_comment">Ayesha</div>
+              <div className="commentTimingOthers">22-11-2024</div>
+          </div>
+          <div className="otherCommentSectionComment">
+          very complex project
+          </div>
+
+          </div>
+        </div>
+
+        </div>
+       </div>
       </div>
+     </div>
     </div>
-
-
-
-         </div>
-      </div>
 
             <div className="videoSuggestions">
 
@@ -168,7 +220,7 @@ const Video = () => {
                         <img src="https://th.bing.com/th/id/OIP.8gLtXrl4KYPfPA6QyMnlUwHaEK?w=304&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" className='video_suggetion_thumbnail_img' />
                     </div>
                     <div className="video_suggetions_About">
-                        <div className="video_suggetions_About_title">T20 2024 Worldcup Final IND vs SA Last 5 overs #cricket #india</div>
+                        <div className="video_suggetions_About_title">T20 2024 Worldcup Final IND vs SA Last 5 overs #cricket</div>
                         <div className="video_suggetions_About_Profile">Cricket 320</div>
                         <div className="video_suggetions_About_Profile">136K views . 1 day ago</div>
                     </div>
@@ -179,9 +231,9 @@ const Video = () => {
                         <img src="https://th.bing.com/th/id/OIP.8gLtXrl4KYPfPA6QyMnlUwHaEK?w=304&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" className='video_suggetion_thumbnail_img' />
                     </div>
                     <div className="video_suggetions_About">
-                        <div className="video_suggetions_About_title">T20 2024 Worldcup Final IND vs SA Last 5 overs #cricket #india</div>
-                        <div className="video_suggetions_About_Profile">Cricket 320</div>
-                        <div className="video_suggetions_About_Profile">136K views . 1 day ago</div>
+                        <div className="video_suggetions_About_title">best cake recipe</div>
+                        <div className="video_suggetions_About_Profile">Baking</div>
+                        <div className="video_suggetions_About_Profile">100K views . 5day ago</div>
                     </div>
                 </div>
 
@@ -190,9 +242,9 @@ const Video = () => {
                         <img src="https://th.bing.com/th/id/OIP.8gLtXrl4KYPfPA6QyMnlUwHaEK?w=304&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" className='video_suggetion_thumbnail_img' />
                     </div>
                     <div className="video_suggetions_About">
-                        <div className="video_suggetions_About_title">T20 2024 Worldcup Final IND vs SA Last 5 overs #cricket #india</div>
-                        <div className="video_suggetions_About_Profile">Cricket 320</div>
-                        <div className="video_suggetions_About_Profile">136K views . 1 day ago</div>
+                        <div className="video_suggetions_About_title">Tom And Jerry</div>
+                        <div className="video_suggetions_About_Profile">Cartoon</div>
+                        <div className="video_suggetions_About_Profile">205K views . 15 mints ago</div>
                     </div>
                 </div>
 
@@ -201,9 +253,9 @@ const Video = () => {
                         <img src="https://th.bing.com/th/id/OIP.8gLtXrl4KYPfPA6QyMnlUwHaEK?w=304&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" className='video_suggetion_thumbnail_img' />
                     </div>
                     <div className="video_suggetions_About">
-                        <div className="video_suggetions_About_title">T20 2024 Worldcup Final IND vs SA Last 5 overs #cricket #india</div>
-                        <div className="video_suggetions_About_Profile">Cricket 320</div>
-                        <div className="video_suggetions_About_Profile">136K views . 1 day ago</div>
+                        <div className="video_suggetions_About_title">baby baji</div>
+                        <div className="video_suggetions_About_Profile">PK drama</div>
+                        <div className="video_suggetions_About_Profile">470K views . 3 months ago</div>
                     </div>
                 </div>
             </div>
