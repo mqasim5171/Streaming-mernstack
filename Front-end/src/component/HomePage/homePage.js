@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import './homePage.css'
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+//import axios from 'axios';
 const HomePage = ({ sideNavbar }) => {
-  const [data, setData] = useState([]);
+ // const [data, setData] = useState([]);
 
- /*useEffect(() => {
+ useEffect(() => {
     axios.get('http://localhost:4000/api/allVideo').then(res => {
       console.log(res.data.videos)
       setData(res.data.videos);
     }).catch(err => {
       console.log(err);
     })
-  }, [])*/
+  }, [])
 
   const options = ["All", "Twenty20 Cricket", "Music", "Live", "Mixes", "Gaming", "Debates", "Coke Studio Pakistan", "Democracy", "Pakistani dramas", "Comedy", "Pakistani dramas", "Comedy", "Pakistani dramas", "Comedy",];
 
@@ -33,49 +33,54 @@ const HomePage = ({ sideNavbar }) => {
 
 
       <div className={sideNavbar ? "home_mainPage" : "home_mainPageWithoutLink"}>
+      {
+       data?.map((item, ind) => {
+       return (
+         <Link to={`/watch/${item._id}`}
+          className="youtube_Video" key={ind}>
+        <div className="youtube_thumbnailBox">
+          <img
+            src="https://yt3.googleusercontent.com/nuauwuN8sxUEDQxXD9TLLYW7JJ1VHgGOPbZgY4JboCWwLGxjbFt-JS_3zWElI3Shw-awxBQ6=s900-c-k-c0x00ffffff-no-rj"
+            alt="Thumbnail"
+            className="youtube_thumbnailPic"
+          />
 
-        {
-          data?.map((item, ind) => {
-            return (
-             <Link to={`/watch/${item._id}`} className="youtube_Video">
+          <div className="youtube_timingThumbnail">28:05</div>
+        </div>
 
-            <div className='youtube_thumbnailBox'>
-              <img src='' alt='' className='youtube_thumbnailPic'/>
-              
-              <div className='youtube_timingThumbnail'>
-                28:05
-              </div>
-              </div>
-                
-              <div className='youtubeTitleBoxProfile'>
-              <img src='' alt='profile' className='youtube_thumbnail_profile'/>
+        <div className="youtubeTitleBoxProfile">
+          <img
+            src="https://yt3.googleusercontent.com/nuauwuN8sxUEDQxXD9TLLYW7JJ1VHgGOPbZgY4JboCWwLGxjbFt-JS_3zWElI3Shw-awxBQ6=s160-c-k-c0x00ffffff-no-rj"
+            alt="profile"
+            className="youtube_thumbnail_profile"
+          />
+        </div>
 
-              </div>
-              
-              <div className='youtubeTitleBox_Title'>
-              <div className='youtube_vedioTitle'>User1</div>
-              <div className='youtube_channelName'>User1</div>
-              <div className='youtubeVedio_veiws'>3 likes</div>
-              </div>
-                {/* Please watch the video for the code} */}
-
-            </Link>
-            );
-          })
-        }
+        <div className="youtubeTitleBox_Title">
+          <div className="youtube_vedioTitle">User1</div>
+          <div className="youtube_channelName">User1</div>
+          <div className="youtubeVedio_veiws">3 likes</div>
+        </div>
 
 
-
-
-
-
-
-      </div>
+      </Link>
+ 
+ 
 
 
 
-    </div>
-  )
+    );
+  })
+}
+
+
+
+</div>
+
+
+
+</div>
+)
 }
 
 export default HomePage

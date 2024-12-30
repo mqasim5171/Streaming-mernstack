@@ -11,9 +11,9 @@ import SmartDisplayOutlinedIcon from '@mui/icons-material/SmartDisplayOutlined';
 import WatchLaterOutlinedIcon from '@mui/icons-material/WatchLaterOutlined';
 import ThumbUpAltOutlinedIcon from '@mui/icons-material/ThumbUpAltOutlined';
 import ContentCutIcon from '@mui/icons-material/ContentCut';
-const SideNavbar = ({sideNavbar}) => {
+const SideNavbar = ({ sideNavbar }) => {
     return (
-        <div className={sideNavbar?"home-sideNavbar":"homeSideNavbarHide"}>
+        <div className={sideNavbar ? "home-sideNavbar" : "homeSideNavbarHide"}>
             <div className="home_sideNavbarTop">
                 <div className={`home_sideNavbarTopOption`} >
                     <HomeIcon />
@@ -30,7 +30,7 @@ const SideNavbar = ({sideNavbar}) => {
                     <div className="home_sideNavbarTopOptionTitle" >Subscription</div>
                 </div>
 
-               
+
 
             </div>
 
@@ -41,12 +41,12 @@ const SideNavbar = ({sideNavbar}) => {
 
                 </div>
 
-               
+
                 <div className={`home_sideNavbarTopOption `}>
                     <WatchLaterOutlinedIcon />
                     <div className="home_sideNavbarTopOptionTitle">Watch later</div>
                 </div>
-                
+
                 <div className={`home_sideNavbarTopOption`} >
                     <RecentActorsIcon />
                     <div className="home_sideNavbarTopOptionTitle" >Your Channel</div>
@@ -56,28 +56,28 @@ const SideNavbar = ({sideNavbar}) => {
                     <HistoryIcon />
                     <div className="home_sideNavbarTopOptionTitle" >History</div>
                 </div>
-               
+
                 <div className={`home_sideNavbarTopOption`} >
-                    <PlaylistAddIcon/>
+                    <PlaylistAddIcon />
                     <div className="home_sideNavbarTopOptionTitle" >Playlist</div>
                 </div>
-               
+
                 <div className={`home_sideNavbarTopOption`} >
-                    <SmartDisplayOutlinedIcon/>
+                    <SmartDisplayOutlinedIcon />
                     <div className="home_sideNavbarTopOptionTitle" >Your Vedios</div>
                 </div>
-               
+
                 <div className={`home_sideNavbarTopOption`} >
                     <ThumbUpAltOutlinedIcon />
                     <div className="home_sideNavbarTopOptionTitle" >Liked vedios</div>
                 </div>
-               
-                 <div className={`home_sideNavbarTopOption }`}>
+
+                <div className={`home_sideNavbarTopOption }`}>
                     <ContentCutIcon />
                     <div className="home_sideNavbarTopOptionTitle">Your clips</div>
                 </div>
-                
-                
+
+
 
             </div>
 
@@ -86,7 +86,7 @@ const SideNavbar = ({sideNavbar}) => {
                     <div className="home_sideNavbarTopOptionTitleHeader">Subscription</div>
 
                 </div>
-{/*
+                {/*
                 <div className="home_sideNavbarTopOption">
                   <img className='home_sideNavbar_ImgLogo' src='https://www.medianews4u.com/wp-content/uploads/2020/04/Aaj-Tak-2.jpg' />
                     <div className="home_sideNavbarTopOptionTitle">Aaj Tak</div>

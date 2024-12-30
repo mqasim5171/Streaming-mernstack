@@ -13,7 +13,7 @@ import SearchIcon from '@mui/icons-material/Search';
 //import axios from 'axios';
  //import { modalClasses } from '@mui/material';
 
-const Navbar = () => {
+const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
   const [userPic, setUserPic] = useState("https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-library.com%2Ficon%2Fanonymous-user-icon-4.html&psig=AOvVaw1F023JiUDxYAdBK-scaFpV&ust=1735490802578000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDUi6r1yooDFQAAAAAdAAAAABAE")
   const [navbarModal, setNavbarModal] = useState(false);
  /* const [login,setLogin] = useState(false);
