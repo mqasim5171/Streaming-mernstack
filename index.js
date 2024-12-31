@@ -1,9 +1,11 @@
 var express = require("express");
+const cookieParser = require('cookie-parser');
+
 var app = express();
 var port = 4000
 
 app.use(express.json());
-app.use(cookieparser());
+app.use(cookieParser());
 require('./Connection/conn');
 
 
