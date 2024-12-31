@@ -77,7 +77,7 @@ const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
        
        
        <Link to={'/'} className="navbar_youtubeImg">
-          <HiveIconIcon sx={{ fontSize: "34px" }} className='navbar_youtubeImage' />
+          <HiveIcon sx={{ fontSize: "34px" }} className='navbar_youtubeImage' />
           <div className='navbar_utubeTitle'>AEQ</div>
         </Link>
 
@@ -95,8 +95,11 @@ const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
     
     
     <div className="navbar-right">
-            
-          <VideoCallIcon sx={{ fontSize: "30px", cursor: "pointer", color: "white" }} />
+
+          <Link to={'/763/upload'}>
+             <VideoCallIcon sx={{ fontSize: "30px", cursor: "pointer", color: "white" }} />
+          </Link>  
+          
          
         
         <NotificationsIcon sx={{ fontSize: "30px", cursor: "pointer", color: "white" }} />
@@ -105,12 +108,13 @@ const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
      {navbarModal && 
      <div className= 'navbar-modal'>
      <div className="navbar-modal-option" onClick={handleprofile}>Profile</div>
-     <div className="navbar-modal-option">Logout</div>
-     <div className="navbar-modal-option">Login</div>
+     <div className="navbar-modal-option" onClick={()=> onclickofPopUpOption('logout')} >Logout</div>
+     <div className="navbar-modal-option" onClick={()=> onclickOfPopUpOption('login')}>Login</div>
    </div>
      }
   </div> 
  </div>
+ {login && <Login  setLoginModal={setLoginModal}/>}
  </div>
 
   )

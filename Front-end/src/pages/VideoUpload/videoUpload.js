@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import './videoUpload.css';
-import YouTubeIcon from '@mui/icons-material/YouTube';
+
+import HiveIcon from '@mui/icons-material/Hive';
 import { Link,useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import CircularProgress from '@mui/material/CircularProgress';
@@ -57,12 +58,19 @@ const VideoUpload = () => {
         <div className='videoUpload'>
             <div className="uploadBox">
                 <div className="uploadVideoTitle">
-                    <YouTubeIcon sx={{ fontSize: "54px", color: "red" }} />
+                    <HiveIcon sx={{ fontSize: "54px", color: "red" }} />
                     Upload Video
                 </div>
 
                 <div className="uploadForm">
-                    {/* Please watch the video for the code} */}
+                
+                <input type="text" placeholder='Title of Video' className='uploadFormInputs'/>
+                <input type="text" placeholder='Description' className='uploadFormInputs'/>
+                <input type="text" placeholder='Category' className='uploadFormInputs'/>
+                 <div>Thumbnail <input type='file' accept='image/*'/> </div>
+                 <div>Video <input type='file' accept='video/mp4, video/webm, video/*'/> </div>
+
+              
 
                     {
                     loader && <Box sx={{ display: 'flex' }}>
