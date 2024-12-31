@@ -4,15 +4,15 @@ import './App.css';
 import Navbar from './component/Navbar/navbar';
 //import SideNavbar from './component/SideNavbar/sideNavbar';
 import Home from './Pages/Home/home';
-//import Video from './Pages/Video/video';
+import Video from './Pages/Video/video';
 import { useState} from 'react';
 import {BrowserRouter, Route,Routes} from 'react-router-dom';
-import Profile from 'Pages/Profile/profile';
-//import VideoUpload from 'Pages/VideoUpload/videoUpload';
-//import SignUp from 'Pages/SignUp/signUp';
+import Profile from './Pages/Profile/profile';
+import VideoUpload from './Pages/VideoUpload/videoUpload.js';
+import SignUp from './Pages/SignUp/signUp';
 
 
-//import axios from 'axios';
+import axios from 'axios';
 function App() {
   const [sideNavbar,setSideNavbar] = useState(true);
 

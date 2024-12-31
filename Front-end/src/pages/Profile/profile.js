@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './profile.css';
-import SideNavbar from '../../omponent/SideNavbar/sideNavbar';
+import SideNavbar from '../../component/SideNavbar/sideNavbar';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';

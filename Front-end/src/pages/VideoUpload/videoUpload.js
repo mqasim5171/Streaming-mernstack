@@ -27,34 +27,30 @@ const VideoUpload = () => {
         try {
             // cloudName="dhlklhfgj"
         const response = await axios.post(`https://api.cloudinary.com/v1_1/dkyclz6il/${type}/upload`, data)
-                    setProgressBar(false)
-                    const Url = response.data.url;
-                   console.log(url) 
+                    //setProgressBar(false)
+                    setLoader(false);
+                    const url = response.data.url;
+                   console.log(url) ;
                 } catch (err) {
-                    setLoader(false)
-                    console.log(err)
+                    setLoader(false);
+                    console.log(err);
                 }
         
-            
-            
-
-
-
-
 
     }
     
-    useEffect(()=>{
+ /*   useEffect(()=>{
         let isLogin = localStorage.getItem("userId");
         if(isLogin===null){
             navigate('/')
         }
-    },[])
+    },
+    [])
     console.log(inputField)
     const handleSubmitFunc = async()=>{
-        {/* Please watch the video for the code} */}
+         /*Please watch the video for the code 
 
-    }
+    }*/
 
     
 

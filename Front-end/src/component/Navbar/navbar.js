@@ -1,6 +1,9 @@
 import React, { useState,useEffect } from 'react'
 
 import "./navbar.css";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import HiveIcon from '@mui/icons-material/Hive';
 import KeyboardVoiceIcon from '@mui/icons-material/KeyboardVoice';
@@ -8,16 +11,15 @@ import VideoCallIcon from '@mui/icons-material/VideoCall';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 //import PersonIcon from '@mui/icons-material/Person';
 import SearchIcon from '@mui/icons-material/Search';
-import { Link,useNavigate } from 'react-router-dom';
-//import Login from '../Login/login';
-//import axios from 'axios';
+import Login from '../Login/login';
+import axios from 'axios';
  //import { modalClasses } from '@mui/material';
 
 const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
-  const [userPic, setUserPic] = useState("https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-library.com%2Ficon%2Fanonymous-user-icon-4.html&psig=AOvVaw1F023JiUDxYAdBK-scaFpV&ust=1735490802578000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDUi6r1yooDFQAAAAAdAAAAABAE")
+  const [userPic, setUserPic] = useState("")
   const [navbarModal, setNavbarModal] = useState(false);
   const [login,setLogin] = useState(false);
-  const [isLogedIn,setIsLogedIn] = useState(false)
+  //const [isLogedIn,setIsLogedIn] = useState(false)
   const navigate = useNavigate();
 
   const handleClickModal =()=>{
@@ -26,11 +28,11 @@ const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
   const sideNavbarFunc=()=>{
     setSideNavbarFunc(!sideNavbar)
   }
-  const handleprofile =()=>{
+ /* const handleprofile =()=>{
     let userId = localStorage.getItem("userId")
     navigate(`/user/7868}`);
     setNavbarModal(false);
-  }
+  }*/
 
   const setLoginModal=()=>{
     setLogin(false);
@@ -51,13 +53,13 @@ const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
     }
   }
 
-  const getLogoutFun = async()=>{
+ /* const getLogoutFun = async()=>{
     axios.post("http://localhost:4000/auth/logout",{},{ withCredentials: true}).then((res)=>{
       console.log("Logout ")
     }).catch(err=>{
       console.log(err)
     })
-  }
+  }*/
 
   useEffect(()=>{
     let userProfilePic = localStorage.getItem("userProfilePic");
@@ -108,7 +110,7 @@ const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
      {navbarModal && 
      <div className= 'navbar-modal'>
      <div className="navbar-modal-option" onClick={handleprofile}>Profile</div>
-     <div className="navbar-modal-option" onClick={()=> onclickofPopUpOption('logout')} >Logout</div>
+     <div className="navbar-modal-option" onClick={()=> onclickOfPopUpOption('logout')} >Logout</div>
      <div className="navbar-modal-option" onClick={()=> onclickOfPopUpOption('login')}>Login</div>
    </div>
      }
