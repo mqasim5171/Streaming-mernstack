@@ -26,16 +26,20 @@ const VideoUpload = () => {
         data.append('upload_preset', 'youtube-clone');
         try {
             // cloudName="dhlklhfgj"
+        const response = await axios.post(`https://api.cloudinary.com/v1_1/dkyclz6il/${type}/upload`, data)
+                    setProgressBar(false)
+                    const Url = response.data.url;
+                   console.log(url) 
+                } catch (err) {
+                    setLoader(false)
+                    console.log(err)
+                }
+        
             
-            {/* Please watch the video for the code} */}
+            
 
 
 
-
-        } catch (err) {
-            setLoader(false)
-            console.log(err)
-        }
 
 
     }
@@ -67,8 +71,8 @@ const VideoUpload = () => {
                 <input type="text" value={inputField.title} onChange={(e)=>{handleOnChangeInput(e,'title')}} placeholder='Title of Video' className='uploadFormInputs'/>
                 <input type="text" value={inputField.description} onChange={(e)=>{handleOnChangeInput(e,'description')}} placeholder='Description' className='uploadFormInputs'/>
                 <input type="text" value={inputField.videoType}  onChange={(e)=>{handleOnChangeInput(e,'vedioType')}} placeholder='Category' className='uploadFormInputs'/>
-                 <div>Thumbnail <input type='file' accept='image/*'/> </div>
-                 <div>Video <input type='file' accept='video/mp4, video/webm, video/*'/> </div>
+                 <div>Thumbnail <input type='file' accept='image/*'onChange={(e) => uploadImage(e,'image')} /> </div>
+                 <div>Video <input type='file' accept='video/mp4, video/webm, video/*'onChange={(e) => uploadImage(e,'video')}/> </div>
 
               
 
