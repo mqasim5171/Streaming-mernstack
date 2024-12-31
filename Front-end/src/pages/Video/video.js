@@ -8,6 +8,7 @@ import axios from 'axios';
 import {toast,ToastContainer} from 'react-toastify'
 const Video = () => {
     const [message, setMessage] = useState("");
+    console.log(message)
     const [data, setData] = useState(null);
     const [videoUrl, setVideoURL] = useState("");
     const { id } = useParams();
@@ -140,12 +141,12 @@ const Video = () => {
 
              </div>
              <div className="youtubeCommentSection">
-            <div className="youtubeCommentSectionTitle">2 comments
+            <div className="youtubeCommentSectionTitle">3 Comments
 
              <div className="youtubeSelfComment">
                <img className="video_youtubeSelfCommentProfile" src="https://th.bing.com/th/id/OIP.ZZaV8f0-sI1l6dcdApuE6gHaEK?w=265&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
                <div className="addAcomment">
-                 <input type='text' className='addAcommentInput' placeholder='Add a comment'/>
+                 <input type='text' value={message} onChange={(e)=>{setMessage(e.target.value)}} className='addAcommentInput' placeholder='Add a comment'/>
                 
                  <div className="cancelSubmitComment">
                    <div className="cancelComment">Cancel</div>

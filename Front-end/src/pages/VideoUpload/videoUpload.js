@@ -64,9 +64,9 @@ const VideoUpload = () => {
 
                 <div className="uploadForm">
                 
-                <input type="text" placeholder='Title of Video' className='uploadFormInputs'/>
-                <input type="text" placeholder='Description' className='uploadFormInputs'/>
-                <input type="text" placeholder='Category' className='uploadFormInputs'/>
+                <input type="text" value={inputField.title} onChange={(e)=>{handleOnChangeInput(e,'title')}} placeholder='Title of Video' className='uploadFormInputs'/>
+                <input type="text" value={inputField.description} onChange={(e)=>{handleOnChangeInput(e,'description')}} placeholder='Description' className='uploadFormInputs'/>
+                <input type="text" value={inputField.videoType}  onChange={(e)=>{handleOnChangeInput(e,'vedioType')}} placeholder='Category' className='uploadFormInputs'/>
                  <div>Thumbnail <input type='file' accept='image/*'/> </div>
                  <div>Video <input type='file' accept='video/mp4, video/webm, video/*'/> </div>
 

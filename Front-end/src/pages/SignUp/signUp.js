@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 
 const SignUp = () => {
-    const [uploadedImageUrl, setUploadedImageUrl] = useState("https://th.bing.com/th/id/OIP.Wy2uo_y-ttULYs4chLmqSAAAAA?rs=1&pid=ImgDetMain");
+    const [uploadedImageUrl, setUploadedImageUrl] = useState("https://th.bing.com/th/id/OIP.tHA_ZcrrhsXzeNjbllQDrAHaHa?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
     const [singUpFiled, setSignUpField] = useState({ "channelName": "", "userName": "", "password": "", "about": "", "profilePic": "" });
     const [progressBar,setProgressBar] = useState(false);
     const navigate = useNavigate();
@@ -46,7 +46,7 @@ const SignUp = () => {
         {/* Please watch the video for the code} */}
     }
 
-
+    console.log(singUpFiled)
 
     return (
         <div className='signUp'>
@@ -58,10 +58,10 @@ const SignUp = () => {
 
                 <div className="signUp_Inputs">
 
-                <input type="text" placeholder='Channel Name' className='signUp_Inputs_inp'value={singUpFiled.channelName}/>
-                <input type="text" placeholder='User Name' className='signUp_Inputs_inp'value={singUpFiled.userName}/>
-                <input type="password" placeholder='Password' className='signUp_Inputs_inp'value={singUpFiled.password}/>
-                <input type="text" placeholder='About your channel' className='signUp_Inputs_inp'value={singUpFiled.about}/>
+                <input type="text"  placeholder='Channel Name'onChange={(e)=>{handleInputFiled(e,'channelName')}} className='signUp_Inputs_inp'value={singUpFiled.channelName} />
+                <input type="text" placeholder='User Name' onChange={(e)=>{handleInputFiled(e,'userName')}}  className='signUp_Inputs_inp'value={singUpFiled.userName}/>
+                <input type="password" placeholder='Password' onChange={(e)=>{handleInputFiled(e,'password')}} className='signUp_Inputs_inp'value={singUpFiled.password}/>
+                <input type="text" placeholder='About your channel' onChange={(e)=>{handleInputFiled(e,'about')}} className='signUp_Inputs_inp'value={singUpFiled.about}/>
 
                     
                   
@@ -70,7 +70,7 @@ const SignUp = () => {
                   <div className="image_upload_signup">
                         <input type='file' onChange={(e) => uploadImage(e)} />
                         <div className='image_upload_signup_div'>
-                            <img className='image_default_signUp' src={'https://th.bing.com/th/id/OIP.tHA_ZcrrhsXzeNjbllQDrAHaHa?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7'} />
+                            <img className='image_default_signUp' src={uploadedImageUrl} />
                         </div>
                     </div>
 
