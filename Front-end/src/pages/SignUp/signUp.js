@@ -9,7 +9,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 const SignUp = () => {
     const [uploadedImageUrl, setUploadedImageUrl] = useState("https://th.bing.com/th/id/OIP.tHA_ZcrrhsXzeNjbllQDrAHaHa?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
-    const [singUpFiled, setSignUpField] = useState({ "channelName": "", "userName": "", "password": "", "about": "", "profilePic": "" });
+    const [singUpFiled, setSignUpField] = useState({ "channelName": "", "userName": "", "password": "", "about": "", "profilePic": uploadedImageUrl });
     const [progressBar,setProgressBar] = useState(false);
     const navigate = useNavigate();
     const handleInputFiled = (event, name) => {
@@ -27,9 +27,9 @@ const SignUp = () => {
         // youtube-clone
         data.append('upload_preset', 'youtube-clone');
         try {
-            // cloudName="dhlklhfgj"
+            // cloudName="dkyclz6il"
             setProgressBar(true)
-            const response = await axios.post("https://api.cloudinary.com/v1_1/dhlklhfgj/image/upload", data)
+            const response = await axios.post("https://api.cloudinary.com/v1_1/dkyclz6il/image/upload", data)
             setProgressBar(false)
             const imageUrl = response.data.url;
             setUploadedImageUrl(imageUrl);
@@ -46,7 +46,7 @@ const SignUp = () => {
         {/* Please watch the video for the code} */}
     }
 
-    console.log(singUpFiled)
+   
 
     return (
         <div className='signUp'>

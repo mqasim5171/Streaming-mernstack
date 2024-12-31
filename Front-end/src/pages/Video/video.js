@@ -57,10 +57,10 @@ const Video = () => {
                 <div className="video_youtube">
                     {data && <video width="400" controls autoPlay className='video_youtube_video'>
                     
-                    <source src={'https://youtu.be/hlkvifwH7xI.mp4'} type="video/mp4"/>
+                   {/* <source src={'https://youtu.be/hlkvifwH7xI.mp4'} type="video/mp4"/>
                     <source src={'https://youtu.be/hlkvifwH7xI.mp4'} type="video/webm"/>  
-                       
-                    </video>}
+                       */}
+                    </video>} 
 
                 </div>
 
@@ -106,11 +106,11 @@ const Video = () => {
                     </div>
                 </div>
 
-                <div className="youtubeCommentSection">
+               <div className="youtubeCommentSection">
                     <div className="youtubeCommentSectionTitle">{comments.length} Comments</div>
 
-                    <div className="youtubeSelfComment">
-                        {/* Please watch the video for the code} */}
+                   ------ {/* <div className="youtubeSelfComment">
+                         Please watch the video for the code} 
 
                     </div>
 
@@ -121,7 +121,7 @@ const Video = () => {
                                 return (
                                     <div className="youtubeSelfComment">
                                         <img className='video_youtubeSelfCommentProfile' src={item?.user?.profilePic} />
-                                            {/* Please watch the video for the code} */}
+                                             Please watch the video for the code} 
 
 
                                     </div>
@@ -132,9 +132,9 @@ const Video = () => {
 
 
 
-                    </div>
+                    </div>*/}---------
                 </div>
-               </div>
+               </div>  
               <div className="youtube_video_About">
               <div>2024-12-30</div>
               <div>this is cool vedio</div>

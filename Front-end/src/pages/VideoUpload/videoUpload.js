@@ -26,31 +26,31 @@ const VideoUpload = () => {
         data.append('upload_preset', 'youtube-clone');
         try {
             // cloudName="dhlklhfgj"
-            
-            {/* Please watch the video for the code} */}
-
-
-
-
-        } catch (err) {
-            setLoader(false)
-            console.log(err)
-        }
-
+        const response = await axios.post(`https://api.cloudinary.com/v1_1/dkyclz6il/${type}/upload`, data)
+                    //setProgressBar(false)
+                    setLoader(false);
+                    const url = response.data.url;
+                   console.log(url) ;
+                } catch (err) {
+                    setLoader(false);
+                    console.log(err);
+                }
+        
 
     }
     
-    useEffect(()=>{
+ /*   useEffect(()=>{
         let isLogin = localStorage.getItem("userId");
         if(isLogin===null){
             navigate('/')
         }
-    },[])
+    },
+    [])
     console.log(inputField)
     const handleSubmitFunc = async()=>{
-        {/* Please watch the video for the code} */}
+         /*Please watch the video for the code 
 
-    }
+    }*/
 
     
 
@@ -67,8 +67,8 @@ const VideoUpload = () => {
                 <input type="text" value={inputField.title} onChange={(e)=>{handleOnChangeInput(e,'title')}} placeholder='Title of Video' className='uploadFormInputs'/>
                 <input type="text" value={inputField.description} onChange={(e)=>{handleOnChangeInput(e,'description')}} placeholder='Description' className='uploadFormInputs'/>
                 <input type="text" value={inputField.videoType}  onChange={(e)=>{handleOnChangeInput(e,'vedioType')}} placeholder='Category' className='uploadFormInputs'/>
-                 <div>Thumbnail <input type='file' accept='image/*'/> </div>
-                 <div>Video <input type='file' accept='video/mp4, video/webm, video/*'/> </div>
+                 <div>Thumbnail <input type='file' accept='image/*'onChange={(e) => uploadImage(e,'image')} /> </div>
+                 <div>Video <input type='file' accept='video/mp4, video/webm, video/*'onChange={(e) => uploadImage(e,'video')}/> </div>
 
               
 
