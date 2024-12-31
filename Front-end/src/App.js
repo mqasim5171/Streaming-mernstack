@@ -7,7 +7,7 @@ import Home from './Pages/Home/home';
 //import Video from './Pages/Video/video';
 import { useState} from 'react';
 import {BrowserRouter, Route,Routes} from 'react-router-dom';
-//import Profile from 'Pages/Profile/profile';
+import Profile from 'Pages/Profile/profile';
 //import VideoUpload from 'Pages/VideoUpload/videoUpload';
 //import SignUp from 'Pages/SignUp/signUp';
 

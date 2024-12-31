@@ -64,11 +64,11 @@ const Video = () => {
                 </div>
 
                 <div className="video_youtubeAbout">
-                    <div className="video_uTubeTitle">{data?.title}</div>
+                    <div className="video_uTubeTitle">{'web java for beginners'}</div>
 
                     <div className="youtube_video_ProfileBlock">
                         <div className="youtube_video_ProfileBlock_left">
-                            <Link to={`/user/${data?.user?._id}`} className="youtube_video_ProfileBlock_left_img">
+                            <Link to={`/user/7868`} className="youtube_video_ProfileBlock_left_img">
                                 <img className='youtube_video_ProfileBlock_left_image' src={data?.user?.profilePic} />
                             </Link>
                             <div className="youtubeVideo_subsView">
@@ -143,9 +143,9 @@ const Video = () => {
             <div className="youtubeCommentSectionTitle">2 comments
 
              <div className="youtubeSelfComment">
-               <img className="video_youtubeSelfCommentProfile" src="https://yt3.googleusercontent.com/C_ICf6omfzyhzLwAttGJKmKLYXKr2vamNBN0rEueUBqDW18sFqac2dIRnkeGKZ-613ZH9-XQ=s160-c-k-c0x00ffffff-no-rj "/>
+               <img className="video_youtubeSelfCommentProfile" src="https://th.bing.com/th/id/OIP.ZZaV8f0-sI1l6dcdApuE6gHaEK?w=265&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
                <div className="addAcomment">
-                 <input type='text' className='addAcommentInput' placeholder='Add a comeent'/>
+                 <input type='text' className='addAcommentInput' placeholder='Add a comment'/>
                 
                  <div className="cancelSubmitComment">
                    <div className="cancelComment">Cancel</div>
@@ -157,7 +157,7 @@ const Video = () => {
         <div className="youtubeOthersComments">
 
           <div className="youtubeSelfComment">
-          <img className="video_youtubeSelfCommentProfile" src="https://yt3.googleusercontent.com/C_ICf6omfzyhzLwAttGJKmKLYXKr2vamNBN0rEueUBqDW18sFqac2dIRnkeGKZ-613ZH9-XQ=s160-c-k-c0x00ffffff-no-rj "/>
+          <img className="video_youtubeSelfCommentProfile" src="https://th.bing.com/th/id/OIP.JsrCWARN-qm2hPzT44melQHaHa?w=164&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
           <div className="others_CommentSection">
             <div className="others_CommentSectionHeader">
             
@@ -174,7 +174,7 @@ const Video = () => {
         </div>
    
         <div className="youtubeSelfComment">
-          <img className="video_youtubeSelfCommentProfile" src="https://yt3.googleusercontent.com/C_ICf6omfzyhzLwAttGJKmKLYXKr2vamNBN0rEueUBqDW18sFqac2dIRnkeGKZ-613ZH9-XQ=s160-c-k-c0x00ffffff-no-rj "/>
+          <img className="video_youtubeSelfCommentProfile" src="https://th.bing.com/th/id/OIP._Tgcbli3mAJIDYE9ONmmhgHaHa?w=171&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
           <div className="others_CommentSection">
             <div className="others_CommentSectionHeader">
             
@@ -191,7 +191,7 @@ const Video = () => {
         </div>
 
         <div className="youtubeSelfComment">
-          <img className="video_youtubeSelfCommentProfile" src="https://yt3.googleusercontent.com/C_ICf6omfzyhzLwAttGJKmKLYXKr2vamNBN0rEueUBqDW18sFqac2dIRnkeGKZ-613ZH9-XQ=s160-c-k-c0x00ffffff-no-rj "/>
+          <img className="video_youtubeSelfCommentProfile" src="https://th.bing.com/th/id/OIP.mBCvGsuq_wqfn7tJRN1SfgHaHa?w=195&h=195&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
           <div className="others_CommentSection">
             <div className="others_CommentSectionHeader">
             
