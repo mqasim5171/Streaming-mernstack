@@ -12,12 +12,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.1",
-<<<<<<< HEAD
-    "react-scripts": "^3.0.1",
-=======
     "react-scripts": "^5.0.1",
     "react-toastify": "^11.0.2",
->>>>>>> 7103e10e6b68b98289c300642ba39f66ee203cf4
     "web-vitals": "^4.2.4"
   },
   "scripts": {
