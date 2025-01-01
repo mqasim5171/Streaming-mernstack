@@ -3,23 +3,23 @@
 .navbar{
     height: 56px;
     box-sizing: border-box;
-    padding:10px 16px;
+    padding: 10px 16px;
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
     top: 0;
     position: fixed;
-    background-color:cadetblue;
+    background-color: black;
     z-index: 10;
-}
+}   
+
 .navbar-left{
     gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: fit-content;
-
 }
 .navbarHamberger{
     width: 40px;
@@ -28,24 +28,20 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
 }
-.navbar_youtubeimg{
 
+.navbar_youtubeImg{
     display: flex;
-
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    color:white;
+    color: white;
     text-decoration: none;
-
 }
-.navbar_youtubeimage{
-    color:rgb(0, 255, 255)
+.navbar_youtubeImage{
+    color: red;
 }
-.navbar_utubetitle{
-    color:white;
+.navbar_utubeTitle{
     font-size: 20px;
     word-spacing: 0px;
     letter-spacing: 0px;
@@ -59,7 +55,7 @@
 
 .navbar-middle{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     width: 50%;
 }
 .navbar_searchBox{
@@ -69,10 +65,10 @@
 .navbar_searchBoxInput{
     width: 100%;
     height: 40px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 18px;
-    border: 1px solid rgb(16, 15, 15);
-    background-color: #8fc2bd;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid rgb(58, 57, 57);
+    background-color: #121212;
     color: white;
     font-size: 16px;
 
@@ -88,8 +84,8 @@
 .navbar_searchIconBox{
     cursor: pointer;
     width: 70px;
-    border: 1px solid rgb(11, 12, 12);
-    background-color:rgb(46, 62, 61);
+    border: 1px solid rgb(42, 42, 42);
+    background-color:rgb(42, 42, 42);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,12 +97,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(122, 157, 157);
+    background-color:rgb(42, 42, 42);
     border-radius: 50%;
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
+
 /* --------------middle navbar section-------------------- */
 
 .navbar-right{
@@ -129,11 +126,11 @@
     color: white;
 }
 .navbar-modal-option{
-    background-color: rgb(20, 28, 27);
+    background-color: rgb(85, 85, 85);
     padding: 10px;
     cursor: pointer;
     
     &:hover{
-        background-color: rgb(20, 20, 20);
+        background-color: rgb(34, 33, 33);
     }
 }

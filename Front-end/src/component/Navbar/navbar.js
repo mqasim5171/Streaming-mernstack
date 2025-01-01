@@ -16,7 +16,7 @@ import axios from 'axios';
  //import { modalClasses } from '@mui/material';
 
 const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
-  const [userPic, setUserPic] = useState("")
+  const [userPic, setUserPic] = useState("https://th.bing.com/th?q=User+Login+Icon+No+Background&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-WW&cc=PK&setlang=en&adlt=moderate&t=1&mw=247")
   const [navbarModal, setNavbarModal] = useState(false);
   const [login,setLogin] = useState(false);
   //const [isLogedIn,setIsLogedIn] = useState(false)
@@ -85,10 +85,11 @@ const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
 
 
        <div className="navbar-middle">
+        
         <div className="navbar_searchBox">
           <input type='text'placeholder='search' className='navbar_searchBoxInput'/>
          <div className="navbar_searchIconBox">< SearchIcon sx={{ fontSize:"28px",color:"white"}}/> </div>       
-        
+       
         <div className="navbar_mike">
           <KeyboardVoiceIcon sx={{color: 'white'}}/>
         </div>

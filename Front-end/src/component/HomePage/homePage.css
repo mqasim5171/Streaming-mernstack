@@ -11,7 +11,7 @@
     flex-direction: column;
     
     flex: 1;
-    margin-left: 274px;
+    margin-left: 260px;
     min-height: 100vh;
 }
 
@@ -54,7 +54,7 @@
     background-color: black;
     box-sizing: border-box;
     gap: 10px;
-    grid-template-columns: 384px 384px 384px;
+    grid-template-columns: 380px 380px 380px;
     padding: 90px 0 20px 0;
     height: 100vh;
 }
