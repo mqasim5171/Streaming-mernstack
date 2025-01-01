@@ -39,7 +39,7 @@ const VideoUpload = () => {
 
     }
     
- /*   useEffect(()=>{
+    useEffect(()=>{
         let isLogin = localStorage.getItem("userId");
         if(isLogin===null){
             navigate('/')
@@ -48,9 +48,9 @@ const VideoUpload = () => {
     [])
     console.log(inputField)
     const handleSubmitFunc = async()=>{
-         /*Please watch the video for the code 
+         /*Please watch the video for the code */
 
-    }*/
+    }
 
     
 

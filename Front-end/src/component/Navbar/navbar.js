@@ -1,7 +1,6 @@
 import React, { useState,useEffect } from 'react'
 
 import "./navbar.css";
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -28,11 +27,11 @@ const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
   const sideNavbarFunc=()=>{
     setSideNavbarFunc(!sideNavbar)
   }
- /* const handleprofile =()=>{
+  const handleprofile =()=>{
     let userId = localStorage.getItem("userId")
     navigate(`/user/7868}`);
     setNavbarModal(false);
-  }*/
+  }
 
   const setLoginModal=()=>{
     setLogin(false);
@@ -53,13 +52,13 @@ const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
     }
   }
 
- /* const getLogoutFun = async()=>{
+  const getLogoutFun = async()=>{
     axios.post("http://localhost:4000/auth/logout",{},{ withCredentials: true}).then((res)=>{
       console.log("Logout ")
     }).catch(err=>{
       console.log(err)
     })
-  }*/
+  }
 
   useEffect(()=>{
     let userProfilePic = localStorage.getItem("userProfilePic");
