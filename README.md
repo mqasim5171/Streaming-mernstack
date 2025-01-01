@@ -44,7 +44,7 @@ Make sure you have the following installed:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Aish521-design/Streaming-mernstack.git
+   git clone https://github.com/mqasim5171/Streaming-mernstack.git
    cd Streaming-mernstack
    ```
 
