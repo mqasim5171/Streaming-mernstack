@@ -26,7 +26,7 @@ const HomePage = ({ sideNavbar }) => {
         <Link to={`/watch/1`} className="youtube_Video">
           <div className="youtube_thumbnailBox">
             <img
-              src="https://yt3.googleusercontent.com/nuauwuN8sxUEDQxXD9TLLYW7JJ1VHgGOPbZgY4JboCWwLGxjbFt-JS_3zWElI3Shw-awxBQ6=s900-c-k-c0x00ffffff-no-rj"
+              src="https://tse4.mm.bing.net/th?id=OIP.BUpGC1u3bk5uynJISQlnGgHaGx&pid=Api&P=0&h=220"
               alt="Thumbnail"
               className="youtube_thumbnailPic"
             />
@@ -34,7 +34,7 @@ const HomePage = ({ sideNavbar }) => {
           </div>
           <div className="youtubeTitleBoxProfile">
             <img
-              src="https://yt3.googleusercontent.com/nuauwuN8sxUEDQxXD9TLLYW7JJ1VHgGOPbZgY4JboCWwLGxjbFt-JS_3zWElI3Shw-awxBQ6=s160-c-k-c0x00ffffff-no-rj"
+              src="https://tse4.mm.bing.net/th?id=OIP.BUpGC1u3bk5uynJISQlnGgHaGx&pid=Api&P=0&h=220"
               alt="Profile"
               className="youtube_thumbnail_profile"
             />
@@ -50,7 +50,7 @@ const HomePage = ({ sideNavbar }) => {
         <Link to={`/watch/2`} className="youtube_Video">
           <div className="youtube_thumbnailBox">
             <img
-              src="https://yt3.googleusercontent.com/nuauwuN8sxUEDQxXD9TLLYW7JJ1VHgGOPbZgY4JboCWwLGxjbFt-JS_3zWElI3Shw-awxBQ6=s900-c-k-c0x00ffffff-no-rj"
+              src="https://tse3.mm.bing.net/th?id=OIP.P-6m1ZFVZdpGopE6z3Jv5gHaEc&pid=Api&P=0&h=220"
               alt="Thumbnail"
               className="youtube_thumbnailPic"
             />
@@ -58,7 +58,7 @@ const HomePage = ({ sideNavbar }) => {
           </div>
           <div className="youtubeTitleBoxProfile">
             <img
-              src="https://yt3.googleusercontent.com/nuauwuN8sxUEDQxXD9TLLYW7JJ1VHgGOPbZgY4JboCWwLGxjbFt-JS_3zWElI3Shw-awxBQ6=s160-c-k-c0x00ffffff-no-rj"
+              src="https://tse3.mm.bing.net/th?id=OIP.P-6m1ZFVZdpGopE6z3Jv5gHaEc&pid=Api&P=0&h=220"
               alt="Profile"
               className="youtube_thumbnail_profile"
             />
