@@ -10,7 +10,7 @@
     justify-content: space-between;
     top: 0;
     position: fixed;
-    background-color: black;
+    background-color:black;
     z-index: 10;
 }   
 
@@ -44,7 +44,7 @@
 .navbar_utubeTitle{
     font-size: 20px;
     word-spacing: 0px;
-    letter-spacing: 0px;
+    letter-spacing: 4px;
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -53,30 +53,33 @@
 
 /* --------- left-navbar Part ends---------------- */
 
-.navbar-middle{
+.navbar-middle {
     display: flex;
     gap: 10px;
-    width: 50%;
+    width: 100%; /* Full width */
 }
-.navbar_searchBox{
-    width: 80%;
+
+.navbar_searchBox {
+    width: 700px; /* Full width of the container */
     display: flex;
+    margin-left: 50px; 
 }
-.navbar_searchBoxInput{
-    width: 100%;
+
+.navbar_searchBoxInput {
+    width: 100%; /* Make the input take up the full available space */
     height: 40px;
-    border-top-left-radius: 25px;
+    border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border: 1px solid rgb(58, 57, 57);
     background-color: #121212;
     color: white;
     font-size: 16px;
-
     padding-left: 30px;
-    &:focus{
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    &:focus {
         outline: none;
     }
-    &::placeholder{
+    &::placeholder {
         font-size: 16px;
     }
 }
@@ -93,44 +96,56 @@
     border-bottom-right-radius: 20px;
 
 }
-.navbar_mike{
+.navbar_mike {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(42, 42, 42);
+    background-color: rgb(42, 42, 42);
     border-radius: 50%;
     width: 40px;
     height: 40px;
     cursor: pointer;
+    margin-left: 10px; /* Adds space between the search box and microphone icon */
 }
 
 /* --------------middle navbar section-------------------- */
 
-.navbar-right{
+.navbar-right {
     display: flex;
-    gap: 20px;
-    justify-content: center;
     align-items: center;
-    position: relative;
+    gap: 20px;
+    position: absolute; /* Shift it to the absolute position */
+    right: 16px; /* Position it at the right edge of the navbar */
+    top: 50%;
+    transform: translateY(-50%); /* Center align vertically */
 }
-.navbar-right-logo{
-    width: 30px;
+
+.navbar-right-logo {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    object-fit: cover;
     cursor: pointer;
 }
-.navbar-modal{
+
+.navbar-modal {
     position: absolute;
-    top: 35px;
-    width: 100%;
-    z-index: 20;
-    color: white;
-}
-.navbar-modal-option{
+    top: 56px;
+    right: 0; /* Align to the right of the navbar */
     background-color: rgb(85, 85, 85);
-    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    overflow: hidden;
+}
+
+.navbar-modal-option {
+    padding: 10px 20px;
+    color: white;
     cursor: pointer;
-    
-    &:hover{
-        background-color: rgb(34, 33, 33);
-    }
+    transition: background-color 0.3s;
+}
+
+.navbar-modal-option:hover {
+    background-color: rgb(34, 33, 33);
 }
