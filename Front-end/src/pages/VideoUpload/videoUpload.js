@@ -48,9 +48,9 @@ const VideoUpload = () => {
     [])
     console.log(inputField)
     const handleSubmitFunc = async()=>{
-         /*Please watch the video for the code */
+         /*Please watch the video for the code 
 
-    }
+    }*/
 
     
 
@@ -91,5 +91,5 @@ const VideoUpload = () => {
         </div>
     )
 }
-
+}
 export default VideoUpload
