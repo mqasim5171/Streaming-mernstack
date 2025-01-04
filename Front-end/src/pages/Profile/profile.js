@@ -45,7 +45,7 @@ const Profile = ({ sideNavbar }) => {
                     <div className="profile_videos_title">Videos &nbsp; <ArrowRightIcon /></div>
 
                     <div className="profileVideos">
-                     -------div for a vedio-----
+                     
 
 
 

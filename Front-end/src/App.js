@@ -1,28 +1,28 @@
 
-
+import React, { useState,useEffect } from 'react'
 import './App.css';
 import Navbar from './component/Navbar/navbar';
 //import SideNavbar from './component/SideNavbar/sideNavbar';
 import Home from './pages/Home/home';
-import Video from './pages/Video/video';
-import { useState} from 'react';
+import Video from './pages/Video/video.js';
+
 import {BrowserRouter, Route,Routes} from 'react-router-dom';
 import Profile from './pages/Profile/profile';
 import VideoUpload from './pages/VideoUpload/videoUpload.js';
 import SignUp from './pages/SignUp/signUp';
 
-
 import axios from 'axios';
+
 function App() {
   const [sideNavbar,setSideNavbar] = useState(true);
 
-  // useEffect(()=>{
-  //   axios.get('http://localhost:4000/api/allVideo').then(res=>{
-  //     console.log(res)
-  //   }).catch(err=>{
-  //     console.log(err);
-  //   })
-  // },[])
+  useEffect(()=>{
+     axios.get('http://localhost:4000/api/allVideo').then(res=>{
+       console.log(res)
+     }).catch(err=>{
+       console.log(err);
+     })
+   },[])
   
   const setSideNavbarFunc=(value)=>{
     setSideNavbar(value)

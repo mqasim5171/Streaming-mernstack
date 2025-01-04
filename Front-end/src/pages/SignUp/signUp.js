@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import './signUP.css';
-import YouTubeIcon from '@mui/icons-material/YouTube';
+import './signUp.css';
+import HiveIcon from '@mui/icons-material/Hive';
 import { Link,useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify'
@@ -52,7 +52,7 @@ const SignUp = () => {
         <div className='signUp'>
             <div className="signup_card">
                 <div className="signUp_title">
-                    <YouTubeIcon sx={{ fontSize: "54px" }} className='login_youtubeImage' />
+                    <HiveIcon sx={{ fontSize: "54px" }} className='login_youtubeImage' />
                     SignUp
                 </div>
 

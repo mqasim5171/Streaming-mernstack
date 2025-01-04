@@ -57,11 +57,11 @@ const Video = () => {
                 <div className="video_youtube">
                     {data && <video width="400" controls autoPlay className='video_youtube_video'>
                     
-                   {/* <source src={'https://api.cloudinary.com/v1_1/dkyclz6il/image/upload'} type="video/mp4"/>
-                    <source src={'https://youtu.be/hlkvifwH7xI.mp4'} type="video/webm"/>  
-                       */}
-                    </video>} 
-
+                    <source src={'https://api.cloudinary.com/v1_1/dkyclz6il/vedio/upload'} type="video/mp4"/>
+                    <source src={'https://youtube/hlkvifwH7xI.mp4'} type="video/webm"/>  
+                     
+                    </video>
+  }
                 </div>
 
                 <div className="video_youtubeAbout">
@@ -218,7 +218,7 @@ const Video = () => {
 
                 <div className="videoSuggestionsBlock">
                     <div className="video_suggetion_thumbnail">
-                        <img src="https://th.bing.com/th/id/OIP.8gLtXrl4KYPfPA6QyMnlUwHaEK?w=304&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" className='video_suggetion_thumbnail_img' />
+                        <img src="https://th.bing.com/th/id/OIF.PdyQyeQvNjkhnUDXpamxTA?w=283&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" className='video_suggetion_thumbnail_img' />
                     </div>
                     <div className="video_suggetions_About">
                         <div className="video_suggetions_About_title">T20 2024 Worldcup Final IND vs SA Last 5 overs #cricket</div>
@@ -229,7 +229,7 @@ const Video = () => {
 
                 <div className="videoSuggestionsBlock">
                     <div className="video_suggetion_thumbnail">
-                        <img src="https://th.bing.com/th/id/OIP.8gLtXrl4KYPfPA6QyMnlUwHaEK?w=304&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" className='video_suggetion_thumbnail_img' />
+                        <img src="https://th.bing.com/th?id=OIF.k5aMDt%2fjwWEumemFyo6Q%2fA&w=323&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" className='video_suggetion_thumbnail_img' />
                     </div>
                     <div className="video_suggetions_About">
                         <div className="video_suggetions_About_title">best cake recipe</div>
@@ -240,7 +240,7 @@ const Video = () => {
 
                 <div className="videoSuggestionsBlock">
                     <div className="video_suggetion_thumbnail">
-                        <img src="https://th.bing.com/th/id/OIP.8gLtXrl4KYPfPA6QyMnlUwHaEK?w=304&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" className='video_suggetion_thumbnail_img' />
+                        <img src="https://th.bing.com/th/id/OIP.YzUraQWOziVdb8d0hXkZ8gHaFP?w=264&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" className='video_suggetion_thumbnail_img' />
                     </div>
                     <div className="video_suggetions_About">
                         <div className="video_suggetions_About_title">Tom And Jerry</div>
@@ -251,7 +251,7 @@ const Video = () => {
 
                 <div className="videoSuggestionsBlock">
                     <div className="video_suggetion_thumbnail">
-                        <img src="https://th.bing.com/th/id/OIP.8gLtXrl4KYPfPA6QyMnlUwHaEK?w=304&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" className='video_suggetion_thumbnail_img' />
+                        <img src="https://th.bing.com/th/id/OIP.YgWSWnPRP577JaGZ6SLVVgHaEK?w=312&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" className='video_suggetion_thumbnail_img' />
                     </div>
                     <div className="video_suggetions_About">
                         <div className="video_suggetions_About_title">baby baji</div>

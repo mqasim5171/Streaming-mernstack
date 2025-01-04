@@ -221,7 +221,7 @@
     width: 100%;
     max-width: 406px;
     padding: 10px 15px;
-    gap: 15px;
+    gap: 37px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -229,7 +229,7 @@
 
 .videoSuggestionsBlock{
     display: flex;
-    gap: 15px;
+    gap: 17px;
     cursor: pointer;
 }
 .video_suggetion_thumbnail{
