@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿# Video Sharing MERN Stack App
+=======
+# Video Sharing MERN Stack App
+>>>>>>> 111ce9e6f324b24f303284f286fbab68c37dfed1
 
 Welcome to the **Video Sharing MERN Stack App**! This application allows users to upload, share, and stream videos seamlessly. 
 It is designed with modern technologies to provide a smooth and user-friendly experience.
@@ -41,7 +45,11 @@ It is designed with modern technologies to provide a smooth and user-friendly ex
   - A NoSQL database to store user and video data efficiently.
 
   website :
+<<<<<<< HEAD
   ![alt text](<web 1.png>)cd
+=======
+  ![alt text](<web 1.png>)
+>>>>>>> 111ce9e6f324b24f303284f286fbab68c37dfed1
 
   ![alt text](<web 2.png>)
   

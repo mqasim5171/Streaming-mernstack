@@ -86,14 +86,14 @@ const SideNavbar = ({ sideNavbar }) => {
                     <div className="home_sideNavbarTopOptionTitleHeader">Subscription</div>
 
                 </div>
-                {/*
+                {
                 <div className="home_sideNavbarTopOption">
                   <img className='home_sideNavbar_ImgLogo' src='https://www.medianews4u.com/wp-content/uploads/2020/04/Aaj-Tak-2.jpg' />
                     <div className="home_sideNavbarTopOptionTitle">Aaj Tak</div>
                 </div>
 
 
-                <div className="home_sideNavbarTopOption">
+            /*<div className="home_sideNavbarTopOption">
                     <img className='home_sideNavbar_ImgLogo' src='https://th.bing.com/th/id/R.bce6ed4af85677ce3b6908ac7e8e631b?rik=DFwXRhY0pZxYIg&pid=ImgRaw&r=0' />
                     <div className="home_sideNavbarTopOptionTitle">The LallanTop</div>
                 </div>
@@ -103,7 +103,7 @@ const SideNavbar = ({ sideNavbar }) => {
                     <div className="home_sideNavbarTopOptionTitle">NDTV India</div>
                 </div>
 
-           */ }
+          */  }
             </div>
         </div>
     )
