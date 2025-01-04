@@ -1,5 +1,6 @@
 const User = require('../Modals/user');
 const bcrypt = require('bcryptjs');
+const jwt= require('jsonwebtoken');
 
 
 

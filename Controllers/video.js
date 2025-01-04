@@ -4,10 +4,11 @@ const Video = require('../Modals/video');
 exports.uploadVideo = async (req,res)=>{
     try{
         const { title, description, videoLink, videoType,thumbnail }  = req.body;
-        console.log (req.user);
-         // please watch the video for the code
+        console.log (req.user)
+        const video = new Video({user: req.user._id,title,description,videoLink, videoType,thumbnail});
+         await videoUpload.save();
 
-        res.status(201).json({ sucess: "true", videoUpload });
+         res.status(201).json({success:"true",videoUpload});
 
 
     }catch (error){
@@ -19,7 +20,7 @@ exports.uploadVideo = async (req,res)=>{
 exports.getAllVideo = async(req,res)=>{
     try{
         const videos = await Video.find().populate('user','channelName profilePic userName createdAt');
-         // please watch the video for the code
+        
         res.status(201).json({ sucess: "true", "videos": videos });
     }catch (error){
         res.status(500).json({ error: 'Server error' });
@@ -29,7 +30,7 @@ exports.getAllVideo = async(req,res)=>{
 exports.getVideoById = async (req,res)=>{
     try{
         let {id} = req.params;
-         // please watch the video for the code
+        const video = await video.findById(id).populate('user','channelName profilepic username createdAt');
 
         res.status(201).json({ sucess: "true", "video": video });
     }catch (error){
