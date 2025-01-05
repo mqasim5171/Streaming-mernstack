@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './signUp.css';
+import './signUP.css';
 import HiveIcon from '@mui/icons-material/Hive';
 import { Link,useNavigate } from 'react-router-dom';
 import axios from 'axios';
