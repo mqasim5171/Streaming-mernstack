@@ -11,13 +11,24 @@ import SmartDisplayOutlinedIcon from '@mui/icons-material/SmartDisplayOutlined';
 import WatchLaterOutlinedIcon from '@mui/icons-material/WatchLaterOutlined';
 import ThumbUpAltOutlinedIcon from '@mui/icons-material/ThumbUpAltOutlined';
 import ContentCutIcon from '@mui/icons-material/ContentCut';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+
 const SideNavbar = ({ sideNavbar }) => {
+    const navigate = useNavigate(); // Initialize useNavigate hook
+
+    const handleNavigation = (path) => {
+        navigate(path); // Navigate to the given path
+    };
+
     return (
         <div className={sideNavbar ? "home-sideNavbar" : "homeSideNavbarHide"}>
             <div className="home_sideNavbarTop">
-                <div className={`home_sideNavbarTopOption`} >
+                <div 
+                    className="home_sideNavbarTopOption" 
+                    onClick={() => handleNavigation('/')} // Navigate to home page
+                >
                     <HomeIcon />
-                    <div className="home_sideNavbarTopOptionTitle" >Home</div>
+                    <div className="home_sideNavbarTopOptionTitle">Home</div>
                 </div>
 
                 <div className={`home_sideNavbarTopOption`} >

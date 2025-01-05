@@ -9,7 +9,6 @@ import HiveIcon from '@mui/icons-material/Hive';
 import KeyboardVoiceIcon from '@mui/icons-material/KeyboardVoice';
 import VideoCallIcon from '@mui/icons-material/VideoCall';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-//import PersonIcon from '@mui/icons-material/Person';
 import SearchIcon from '@mui/icons-material/Search';
 import Login from '../Login/login';
 import axios from 'axios';

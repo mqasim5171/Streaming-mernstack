@@ -109,31 +109,7 @@ const Video = () => {
                <div className="youtubeCommentSection">
                     <div className="youtubeCommentSectionTitle">{comments.length} Comments</div>
 
-                   ------ {/* <div className="youtubeSelfComment">
-                         Please watch the video for the code} 
-
-                    </div>
-
-                    <div className="youtubeOthersComments">
-
-                        {
-                            comments.map((item, index) => {
-                                return (
-                                    <div className="youtubeSelfComment">
-                                        <img className='video_youtubeSelfCommentProfile' src={item?.user?.profilePic} />
-                                             Please watch the video for the code} 
-
-
-                                    </div>
-                                );
-                            })
-                        }
-
-
-
-
-                    </div>*/}---------
-                </div>
+                                   </div>
                </div>  
               <div className="youtube_video_About">
               <div>2024-12-30</div>
