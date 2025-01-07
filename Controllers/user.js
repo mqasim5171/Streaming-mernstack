@@ -1,4 +1,4 @@
-const User = require('../Modals/user');
+const User = require('../Modals/user'); // edit
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
