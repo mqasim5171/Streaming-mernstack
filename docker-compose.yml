@@ -13,12 +13,4 @@ services:
     environment:
       NODE_ENV: development
 
-  frontend:
-    build:
-      context: ./Front-end
-      dockerfile: Dockerfile
-    ports:
-      - "3000:80" # Map port 3000 for frontend
-    volumes:
-      - ./Front-end:/app
-      - /app/node_modules
+  
