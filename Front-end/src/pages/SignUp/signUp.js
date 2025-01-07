@@ -43,7 +43,7 @@ const SignUp = () => {
 
     }
     const handleSignup = async () => {
-        {/* Please watch the video for the code} */}
+        axios.post('http://localhost:4000/user/signup', singUpFiled)
     }
 
    
