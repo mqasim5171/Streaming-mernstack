@@ -43,7 +43,12 @@ const SignUp = () => {
 
     }
     const handleSignup = async () => {
-        axios.post('http://localhost:4000/user/signup', singUpFiled)
+        axios.post('http://localhost:4000/user/signup', singUpFiled).then((res) => {
+
+            console.log(res)
+        }).catch((err) => {
+            console.log(err)
+        })
     }
 
    
