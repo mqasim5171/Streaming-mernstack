@@ -25,7 +25,7 @@ const Profile = ({ sideNavbar }) => {
 
                 <div className="profile_top_section">
                     <div className="profile_top_section_profile">
-                        <img className='profile_top_section_img' src="https://th.bing.com/th/id/OIP.I7-Kp6ayUzLQuonE6-rrlAAAAA?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" />
+                        <img className='profile_top_section_img' src="https://th.bing.com/th/id/OIF.kEPz1KiRN3Gln6Z4UPL4BA?w=339&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" />
                     </div>
 
                     <div className="profile_top_section_About">
@@ -65,7 +65,7 @@ const Profile = ({ sideNavbar }) => {
 
                       <Link to={'/watch/8998'} className="profileVideo_block">
                         <div className="profileVideo_block_thumbnail">
-                            <img className='profileVideo_block_thumbnail_img' src="https://th.bing.com/th/id/OIP.xi_VY54V535hztHz11VTyQHaFL?w=225&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+                            <img className='profileVideo_block_thumbnail_img' src="https://th.bing.com/th/id/OIP.UYpQSmFyl1hPJeSTj6qDVAHaDt?w=301&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7">
                             </img>
                         </div>
 
@@ -77,7 +77,7 @@ const Profile = ({ sideNavbar }) => {
 
                       <Link to={'/watch/8998'} className="profileVideo_block">
                         <div className="profileVideo_block_thumbnail">
-                            <img className='profileVideo_block_thumbnail_img' src="httpsth.bing.com/th/id/OIP.I7-Kp6ayUzLQuonE6-rrlAAAAA?w=156&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+                            <img className='profileVideo_block_thumbnail_img' src="https://th.bing.com/th/id/OIF.xRofPj55xEbEiLkB4Tw8VA?w=202&h=266&c=7&r=0&o=5&dpr=1.3&pid=1.7">
                             </img>
                         </div>
 
