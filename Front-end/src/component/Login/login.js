@@ -60,8 +60,7 @@ console.log(loginField)
                     <div className="login-btn" onClick={() => setLoginModal()}>Cancel</div>
                 </div>
 
-                {/* Please watch the video for the code} */}
-
+            
 
             </div>
             <ToastContainer />

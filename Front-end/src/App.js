@@ -34,7 +34,7 @@ function App() {
           <Route path='/' element={<Home sideNavbar={sideNavbar} />} />
           <Route path='/watch/:id' element={<Video />} />
           <Route path='/user/:id' element={<Profile sideNavbar={sideNavbar} />} />
-          <Route path='/:id/upload' element={<VideoUpload/>} />
+          <Route path='/763/upload' element={<VideoUpload/>} />
           <Route path='/signup' element={<SignUp/>} />
         </Routes>
         
