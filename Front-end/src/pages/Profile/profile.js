@@ -4,13 +4,20 @@ import SideNavbar from '../../component/SideNavbar/sideNavbar';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
+import { response } from 'express';
 
 const Profile = ({ sideNavbar }) => {
     const { id } = useParams();
     const [data, setData] = useState([]);
     const [user, setUser] = useState(null);
     const fetchProfileData = async () => {
-        {/* Please watch the video for the code} */}
+        axios.get(`http://localhost:4000/user/${id}/channel`).then((res) => {
+            console.log(response)
+            setData(response.data.video)
+            setUser(response.data.user)
+        }).catch((err) => {
+            console.log(err)
+        })
 
     }
     useEffect(() => {
