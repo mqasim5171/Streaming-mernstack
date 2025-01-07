@@ -1,53 +1,97 @@
-const User = require('../Modals/user');
+const User = require('../Modals/user'); // edit
 const bcrypt = require('bcryptjs');
-const jwt= require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 
-
-
-exports.signUp = async(req,res)=>{
-    try{
+exports.signUp = async (req, res) => {
+    try {
         const { channelName, userName, about, profilePic, password } = req.body;
+
+        // Validate required fields
+        if (!channelName || !userName || !about || !profilePic || !password) {
+            return res.status(400).json({ error: "All fields are required." });
+        }
+
+        // Check if the username already exists
         const isExist = await User.findOne({ userName });
-        console.log(isExist);
-       if(isExist)
-       {
-        res.status(400).json({error:"username already exists please try with other username "})
-       }else
-       {
-           let updatedpass = await bcrypt.hash(password,10);
-           const user = new user({channelName, UserName,about, profilepic,password:updatedpass});
-           await user.save();
-           res.status(201).json({message:"user registered successfully",success:"yes",data:user});
-        }
-        
-        
-    } catch (error){
-        res.status(500).json({ error: 'Server error' });
-    }
-}
+        console.log("Existing User:", isExist);
 
-exports.signIn = async (req,res)=>{
-    try{
+        if (isExist) {
+            return res.status(400).json({
+                error: "Username already exists. Please try with another username.",
+            });
+        }
+
+        // Hash the password
+        const hashedPassword = await bcrypt.hash(password, 10);
+        console.log("Hashed Password:", hashedPassword);
+
+        // Create and save the new user
+        const user = new User({
+            channelName,
+            userName,
+            about,
+            profilePic,
+            password: hashedPassword,
+        });
+
+        await user.save();
+
+        res.status(201).json({
+            message: "User registered successfully",
+            success: "yes",
+            data: user,
+        });
+    } catch (error) {
+        console.error("Error during sign-up:", error);
+        res.status(500).json({ error: "Server error" });
+    }
+};
+
+
+exports.signIn = async (req, res) => {
+    try {
         const { userName, password } = req.body;
-        const user = await User.findOne({ userName });
-        
-        if(user && await bcrypt.compare(password,user.password) ){
-            
-            const token = jwt.sign({userId:user._id},'its_my_secret_key');
-            res.cookie('token',token);
-            console.log(token);
- 
-            res.json({message:"Logged in successfully", success:"true"});
-        }
-        else
-        {
-            res.status(400).json({error:"Invalid Credentials"});
-        }
-    } catch (errorMsg){
-        res.status(500).json({ error: 'Server error' });
-    }
-}
 
-exports.logout = async(req,res)=>{
-    res.clearCookie('token', cookieOptions).json({ message: 'Logged out successfully' });
-}
+        // Find the user by username
+        const user = await User.findOne({ userName });
+
+        // Check credentials
+        if (user && (await bcrypt.compare(password, user.password))) {
+            const token = jwt.sign({ userId: user._id }, "its_my_secret_key", {
+                expiresIn: "1h", // Token expires in 1 hour
+            });
+
+            res.cookie("token", token, {
+                httpOnly: true,
+                secure: process.env.NODE_ENV === "production", // Only secure cookies in production
+                sameSite: "strict",
+            });
+
+            // Include token in the response JSON
+            res.json({
+                message: "Logged in successfully",
+                success: "true",
+                token: token,  // Add this line to return the token
+            });
+        } else {
+            res.status(400).json({ error: "Invalid credentials" });
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: "Server error" });
+    }
+};
+
+
+exports.logout = (req, res) => {
+    // Clear the token cookie
+    const cookieOptions = {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
+        sameSite: "strict",
+    };
+
+    res.clearCookie("token", cookieOptions).json({
+        message: "Logged out successfully",
+    });
+};
